@@ -1,8 +1,11 @@
 
 ## Front-end | Componentização de modal
 
+
+
 ## O novo componente poderá ser reutilizado no processo de novos módulos e refatoração de antigos.Teremos ganhos na reutilização de trechos de código, no isolamento de contexto, na legibilidade do código, e na padronização do projeto.
 
+:bulb: **Sugestão de consulta:** Arquivo `ModalComunicados.vue`
 
 :warning: **Resumo:** Esse modal faz parte do fluxo de transferencia, onde são realizadas os cadastros e listagem de transferencia.
 
