@@ -25,6 +25,9 @@
 - Receber uma condicao para exibir com ou sem icone.
 - Adicionar versão quando para sucesso e erro usando icones.
 - Adicionar condição para 1 ou 2 botoes de ação.
+- o componente deve adicionar uma lente ao site para dar foco ao modal, assim, escurecendo e impedindo o usuario de clicar em outras funcionalidades.
+
+
 
 #### :rocket: Condições adicionais para a tela
 
