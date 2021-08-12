@@ -9,7 +9,34 @@
 
 :bulb: **Caminho sugestivo:** `Compra -> Estoque -> Transferencia `
 
-### :pushpin: Descrição
+### :pushpin: Descrição do Cadastro
+
+- O usuario ao acessar o cadastro de transferencia será exibido uma tela com os seguintes campos :
+  - Campo de comprovante fiscal,já virá preenchido via backend, não sendo possivel a edição ou valores nulos.
+  - Campo de filial(origem/destino) devem ser obrigatorios, caso não sejam preenchidos o sistema deve emitir um feedbcak de validação ao usuario.
+  - Campo data de transferência deverá ser preenchido seguindo as regras de negocio que ainda etao em analise
+  - Campo de hora referente a data de transferencia, deverá ser preenchido seguindo as regras de negocio que ainda etao em analise
+  - Campo data de saida deve ser preenchido seguindo as regras de negocio que ainda etao em analise, nao podendo ser menor que a data da tranferencia escolhida.
+  - Campo de hora referente a data de saida, deverá ser preenchido seguindo as regras de negocio que ainda etao em analise
+  
+- Ao clicar a primeira vez em adicionar itens, o sistema deve exibir um campo de select com o titulo “tipo de item”;
+  - O select de tipo de item deve ser preenchido com as seguintes opções:
+    -Acessorios
+    -Produto tim
+    -Produtos de terceiros
+    -Simcards
+   - Caso Acessorios seja selecionado os campos devem ser exibidos :
+    - Valor: com mascara de valor monetário
+    - Tipo de alíquota as opções do select virá atraves da api.
+    - Código do acessório deverá seguir as regras de negocio que está em analise.
+    - Quantidade: deverá seguir as regras de negocio que está em analise.
+   - Caso produtos tim/ produtoa de terceiros /sim card sejam selecionados os campos devem ser exibidos :
+    - Serial do produto : deverá seguir as regras de negocio que está em analise.
+    - Tipo de alíquota as opções do select virá atraves da api.
+- Ao preencher todos os campos e clicar em adicionar itens deverá ser exibido na tela um bloco com os produtos selecionados
+- Após adicionar pelo menos 1 item o botao de salvar ficará disponivel.
+- será possivel adicionar mais itens ou clilcar no botão salvar.
+- Ao clicar no botão salvar, será necessario validacao se os campos que sao obriatorios estao preenchidos corretamente, caso nao estejam será exibido uma mensagem de feedback ao usuario, caso estejam corretos o modal de sucesso deverá ser exibido e o usuario será redirecionado para a listagem de transferencia.
 
 - O Usuário acessa a listagem, para que possa realizar a auditoria de todos os tipos de venda de aparelho e/ou serviço da TIM (mesmo as que não são enviadas documentação para a TIM) - Troca de chip não será contemplado neste escopo. Porém, se no serviço tiver um novo chip vinculado, o ICCID do chip será retornado nesta consulta.das vendas realizadas.
 - O Usuário seleciona um dos botões de status para realizar a filtragem tanto por status da linha quanto por status de conciliação.
