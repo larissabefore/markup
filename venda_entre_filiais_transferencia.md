@@ -68,15 +68,20 @@
   - Situação/mercadoria
   - Situação fiscal : será representado por icones de cancelado ou concluido , baseado na regra de negocio.
   - Envio : poderá ter botões de visualizar, receber, nota fiscal, e editar.Caso tenha dois opões disponiveis os botões ou icones serão exibidos, caso seja mais de duas opções deverá ser exibido um icone de ação com todas as opções listadas. 
-  - Confirmar recebimento    
+  - Confirmar recebimento: sera representado por icones de recebido ou confirmar recebimento, ao clicar na acão de confirmar recebimento o usuario sera redirecionado para a tela de recebimento, deve seguir o fluxo seguindo as regras de negocio que ainda etao em analise.
 - Ações de listagem :
   - Visualizar: caso o usuario clique nessa opção será redirecionado para a tela de resumo de pedido. (0120 figma)
   - Editar: caso o usuario clique nessa opção será redirecionado para a tela de edição de pedido. (0121 figma)
-  - Anexo de nota fiscal:
-  - Receber:
+  - Anexo de nota fiscal: deve seguir o fluxo seguindo as regras de negocio que ainda etao em analise.
+  - Receber: o usuario sera redirecionado para a tela de recebimento, deve seguir o fluxo seguindo as regras de negocio que ainda etao em analise.
+  
+### :pushpin: Descrição do recebimento/edição/visualização
 
+-Tela de recebimento
+-Tela de edição
+-Tela de visualização
 
-- 
+-
 - para que possa realizar a auditoria de todos os tipos de venda de aparelho e/ou serviço da TIM (mesmo as que não são enviadas documentação para a TIM) - Troca de chip não será contemplado neste escopo. Porém, se no serviço tiver um novo chip vinculado, o ICCID do chip será retornado nesta consulta.das vendas realizadas.
 - O Usuário seleciona um dos botões de status para realizar a filtragem tanto por status da linha quanto por status de conciliação.
 - O Usuário pode selecionar mais de um status para compor o filtro que deseja.
