@@ -26,7 +26,7 @@
     -Produtos de terceiros
     -Simcards
    - Caso Acessorios seja selecionado os campos devem ser exibidos :
-    - Valor: com mascara de valor monetário
+    - Valor: sem mascara de valor monetário. Ex: 5,00
     - Tipo de alíquota as opções do select virá atraves da api.
     - Código do acessório deverá seguir as regras de negocio que está em analise.
     - Quantidade: deverá seguir as regras de negocio que está em analise.
@@ -68,7 +68,7 @@
   - Situação/mercadoria
   - Situação fiscal : será representado por icones de cancelado ou concluido , baseado na regra de negocio.
   - Envio : poderá ter botões de visualizar, receber, nota fiscal, e editar.Caso tenha dois opões disponiveis os botões ou icones serão exibidos, caso seja mais de duas opções deverá ser exibido um icone de ação com todas as opções listadas. 
-  - Confirmar recebimento: sera representado por icones de recebido ou confirmar recebimento, ao clicar na acão de confirmar recebimento o usuario sera redirecionado para a tela de recebimento, deve seguir o fluxo seguindo as regras de negocio que ainda etao em analise.
+  - Confirmar recebimento: sera representado por icones de recebido ou confirmar recebimento, ao clicar na acão de confirmar recebimento o usuario sera redirecionado para a tela de recebimento.
 - Ações de listagem :
   - Visualizar: caso o usuario clique nessa opção será redirecionado para a tela de resumo de pedido. (0120 figma)
   - Editar: caso o usuario clique nessa opção será redirecionado para a tela de edição de pedido. (0121 figma)
@@ -77,7 +77,6 @@
   
 ### :pushpin: Descrição do recebimento/edição/visualização
 
-#### Tela de recebimento
 #### Tela de edição
 #### Tela de visualização
 
