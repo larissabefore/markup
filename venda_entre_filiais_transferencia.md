@@ -14,10 +14,11 @@
 - O usuario ao acessar o cadastro de transferencia será exibido uma tela com os seguintes campos :
   - Campo de comprovante fiscal,já virá preenchido via backend, não sendo possivel a edição ou valores nulos.
   - Campo de filial(origem/destino) devem ser obrigatorios, caso não sejam preenchidos o sistema deve emitir um feedbcak de validação ao usuario.
-  - Campo data de transferência deverá ser preenchido seguindo as regras de negocio que ainda etao em analise
-  - Campo de hora referente a data de transferencia, deverá ser preenchido seguindo as regras de negocio que ainda etao em analise
-  - Campo data de saida deve ser preenchido seguindo as regras de negocio que ainda etao em analise, nao podendo ser menor que a data da tranferencia escolhida.
-  - Campo de hora referente a data de saida, deverá ser preenchido seguindo as regras de negocio que ainda etao em analise
+  - Campo data de transferência deverá ser preenchido com a data atual pelo sistema, não pode ser menor que a data atual e o usuario podera altera-lá.
+  - Campo de hora referente a data de transferencia, deverá ser preenchido com o horario atual, podendo ser alterado pelo o usuario.
+  - Campo data de saida deverá ser preenchido com a data atual pelo sistema, e o usuario podera altera-lá, nao pode ser menor que a data atual.
+  - Campo de hora referente a data de saida, deverá ser preenchido com o horario atual, podendo ser alterado pelo o usuario.
+  - Todos os campos do cadastro são obrigatorios.
   
 - Ao clicar a primeira vez em adicionar itens, o sistema deve exibir um campo de select com o titulo “tipo de item”;
   - O select de tipo de item deve ser preenchido com as seguintes opções:
@@ -28,10 +29,10 @@
    - Caso Acessorios seja selecionado os campos devem ser exibidos :
     - Valor: sem mascara de valor monetário. Ex: 5,00
     - Tipo de alíquota as opções do select virá atraves da api.
-    - Código do acessório deverá seguir as regras de negocio que está em analise.
-    - Quantidade: deverá seguir as regras de negocio que está em analise.
+    - Código do acessório, devera ter limitação de 16 caracteres alfanumericos.
+    - Quantidade: deverá ser maior que zero.
    - Caso produtos tim/ produtoa de terceiros /sim card sejam selecionados os campos devem ser exibidos :
-    - Serial do produto : deverá seguir as regras de negocio que está em analise.
+    - Serial do produto : limitação de 20 caracteres alfanumericos.
     - Tipo de alíquota as opções do select virá atraves da api.
 - Ao preencher todos os campos e clicar em adicionar itens deverá ser exibido na tela um bloco com os produtos selecionados
 - Após adicionar pelo menos 1 item o botao de salvar ficará disponivel.
@@ -43,10 +44,10 @@
 - O Usuário ao acessar a listagem,deverá vizualisar as 10 transferencias completa atuais e seus status, será possivel realizar filtros, editar e visualizar uma transferencia selecionada.
 - Os filtros disponiveis são :
   - Campo de filial.
-  - Campo data de transferência deverá ser preenchido seguindo as regras de negocio que ainda etao em analise
-  - Campo data de saida deve ser preenchido seguindo as regras de negocio que ainda etao em analise, nao podendo ser menor que a data da tranferencia escolhida.
-  - Campo de nota fiscal deve ser preenchido seguindo as regras de negocio que ainda etao em analise.
-  - Campo de n° de transfrencia deve ser preenchido seguindo as regras de negocio que ainda etao em analise.
+  - Campo data de transferência.
+  - Campo data de saida.
+  - Campo de nota fiscal, apenas numeros e maximo de 10 caracteres.
+  - Campo de n° de transfrencia, apenas numeros, sem limitação de caracteres.
   - O usuario poderá clicar na opção de "Mostrar filtros avançados".
  - Os filtros avançados disponiveis são :
   - campo de Filial de origem
@@ -72,13 +73,20 @@
 - Ações de listagem :
   - Visualizar: caso o usuario clique nessa opção será redirecionado para a tela de resumo de pedido. (0120 figma)
   - Editar: caso o usuario clique nessa opção será redirecionado para a tela de edição de pedido. (0121 figma)
-  - Anexo de nota fiscal: deve seguir o fluxo seguindo as regras de negocio que ainda etao em analise.
+  - Anexo de nota fiscal: deve seguir o fluxo atual no sistema.
   - Receber: o usuario sera redirecionado para a tela de recebimento, deve seguir o fluxo seguindo as regras de negocio que ainda etao em analise.
   
-### :pushpin: Descrição do recebimento/edição/visualização
+### :pushpin: Descrição do edição/visualização
 
 #### Tela de edição
 #### Tela de visualização
+
+-O usuario podera visualizar os detalhes de sua trasferencia e confirmar o recebimento da mesma.
+ 
+-No bloco referente ao resumo de pedidos devera carregar para o usuario, são elas:
+  -Filial de origem/filial de destino:
+    -Nome da filial
+    -
 
 -
 - para que possa realizar a auditoria de todos os tipos de venda de aparelho e/ou serviço da TIM (mesmo as que não são enviadas documentação para a TIM) - Troca de chip não será contemplado neste escopo. Porém, se no serviço tiver um novo chip vinculado, o ICCID do chip será retornado nesta consulta.das vendas realizadas.
