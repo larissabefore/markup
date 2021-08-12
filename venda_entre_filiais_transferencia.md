@@ -77,9 +77,9 @@
   
 ### :pushpin: Descrição do recebimento/edição/visualização
 
--Tela de recebimento
--Tela de edição
--Tela de visualização
+# Tela de recebimento
+# Tela de edição
+# Tela de visualização
 
 -
 - para que possa realizar a auditoria de todos os tipos de venda de aparelho e/ou serviço da TIM (mesmo as que não são enviadas documentação para a TIM) - Troca de chip não será contemplado neste escopo. Porém, se no serviço tiver um novo chip vinculado, o ICCID do chip será retornado nesta consulta.das vendas realizadas.
