@@ -100,6 +100,17 @@
  - Bloco com produtos deve poder ser expandido ou retraido, por padrao deve estar retraido, alguns campos podem ser modificados, ao ser alterado algum campo ja deve ser feita a requisição com a api para a modificação ser salva.
  - Botao de salvar só vai existir na tela de visualização da transferencia.
 
+## Versão mobile de edição/visualização
+-Link versão mobile figma: https://www.figma.com/file/pGtyzO2u6O1zFWfYRspxE8/Venda-entre-filiais-DV-3015?node-id=3680%3A87
+
+-Na versao mobile algumas modificações no layout e funcionabilidade foram necessarias para uma melhor experiencia do usuario, utilizando um layout adaptativo.
+-Funcionalidades que foram alteradas:
+ -Detalhes de filial de origem/destino: Ao clicar no card de filial de origem/destino, deve ser aberto um modal mostrando as informações das mesmas. 
+ -Lista de seriais: Ao clicar em "Lista de seriais", deve ser aberto um modal mostrando as informações das mesmas. 
+ -Filtrar produtos: Ao clicar em "Filtrar produtos", deve ser aberto um modal mostrando as opções de filtros, incluindo a opção "Todos", para o usuario ter a opção de visualizar todos os itens. 
+ -Detalhes de produtos, na lista de produtos: Ao clicar em um item da lista de produtos, deve ser aberto um modal mostrando as informações do mesmo. 
+
+-sugestão: criar dois templates em VueJs, um para versao mobile e outro para a desktop, pois, o layout e funcionalidades mudaram muito, assim, sendo impossivel a implementação de um layout apenas responsivo. 
 
 #### Itens adicionais
 
