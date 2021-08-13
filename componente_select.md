@@ -13,7 +13,7 @@ O campo será utilizados nas telas do fluxo de tranferências, onde será realiz
   - Receber um placeholder por parâmetro;
   - Recebe uma lista de oções para o drop do campo;
   - Deve emitir evento de change ao ser clicado;
-  - Deve existir validaçao quando o campo esta com dados incorretos/vazio
+  - Deve existir validaçao quando o campo esta com dados vazio
 
 
 
