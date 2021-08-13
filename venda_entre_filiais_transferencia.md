@@ -104,7 +104,7 @@
 - Link versão mobile figma: https://www.figma.com/file/pGtyzO2u6O1zFWfYRspxE8/Venda-entre-filiais-DV-3015?node-id=3680%3A87
 
 - Na versao mobile algumas modificações no layout e funcionabilidade foram necessarias para uma melhor experiencia do usuario, utilizando um layout adaptativo.
-- Funcionalidades que foram alteradas:
+##### Funcionalidades que foram alteradas:
  - Detalhes de filial de origem/destino: Ao clicar no card de filial de origem/destino, deve ser aberto um modal mostrando as informações das mesmas. 
  - Lista de seriais: Ao clicar em "Lista de seriais", deve ser aberto um modal mostrando as informações das mesmas. 
  - Filtrar produtos: Ao clicar em "Filtrar produtos", deve ser aberto um modal mostrando as opções de filtros, incluindo a opção "Todos", para o usuario ter a opção de visualizar todos os itens. 
