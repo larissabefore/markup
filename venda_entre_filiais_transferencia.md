@@ -92,13 +92,15 @@
    - Status do pedido
    - Quantidade de produtos
    - Tipo de produtos
-   - Botao "Salvar", que ao ser clicado será confirmado o recebimento da transferencia, só deve aparecer caso a transferencia não tenha sido confirmada ainda.
+   - Botao confirmar recbimento
+   - Botao salvar
    
 - No bloco referente a listagem de produtos devera ser exibido para o usuario: 
  - Bloco com seriais dos produtos da transferencia
  - Campo de "Filtrar por", ao ser selecionado deve exibir apenas os itens escolhidos: todos, acessorio, produto tim, produtos de terceiros e sim card, deve ter a opção "todos" como default
  - Bloco com produtos deve poder ser expandido ou retraido, por padrao deve estar retraido, alguns campos podem ser modificados, ao ser alterado algum campo ja deve ser feita a requisição com a api para a modificação ser salva.
- - Botao de salvar só vai existir na tela de visualização da transferencia.
+ - Botao de "confirmar recebimento" existira apenas na tela de visualização, sua ação ira confirmar o recebimento da transferencia de itens
+ - Botao de "salvar" existira apenas na tela de edição, sua ação sera salvar as modificações feitas pelo o usuario
 
 #### Versão mobile de edição/visualização
 - Link versão mobile figma: https://www.figma.com/file/pGtyzO2u6O1zFWfYRspxE8/Venda-entre-filiais-DV-3015?node-id=3680%3A87
